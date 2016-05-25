@@ -1,0 +1,282 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     2014part_a_fixed_reduced
+Instances:    399999
+Attributes:   7
+              AmountRequested
+              Month
+              Purpose
+              DebtTOIncome
+              State
+              YearsOfEmployment
+              ApplicationOutcome
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+YearsOfEmployment <= 0.5 : FAIL
+YearsOfEmployment > 0.5 : SUCCESS
+YearsOfEmployment is missing : SUCCESS
+
+Class distributions
+
+YearsOfEmployment <= 0.5
+SUCCESS	FAIL	
+0.10633641167992312	0.8936635883200769	
+YearsOfEmployment > 0.5
+SUCCESS	FAIL	
+0.8868938038564922	0.11310619614350784	
+YearsOfEmployment is missing
+SUCCESS	FAIL	
+0.5578938947347368	0.44210610526526317	
+
+
+Weight: 2.09
+
+Decision Stump
+
+Classifications
+
+Month = Jan : FAIL
+Month != Jan : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Jan
+SUCCESS	FAIL	
+0.09120009817740053	0.9087999018225994	
+Month != Jan
+SUCCESS	FAIL	
+0.7044705706648691	0.29552942933513093	
+Month is missing
+SUCCESS	FAIL	
+0.49158628470423615	0.5084137152957638	
+
+
+Weight: 1.24
+
+Decision Stump
+
+Classifications
+
+Month = Feb : FAIL
+Month != Feb : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Feb
+SUCCESS	FAIL	
+0.04488409064245813	0.9551159093575419	
+Month != Feb
+SUCCESS	FAIL	
+0.6303325484444768	0.3696674515555232	
+Month is missing
+SUCCESS	FAIL	
+0.3670516941393094	0.6329483058606906	
+
+
+Weight: 1.24
+
+Decision Stump
+
+Classifications
+
+Month = Jan : FAIL
+Month != Jan : FAIL
+Month is missing : FAIL
+
+Class distributions
+
+Month = Jan
+SUCCESS	FAIL	
+0.09072886943398073	0.9092711305660193	
+Month != Jan
+SUCCESS	FAIL	
+0.44648809119763433	0.5535119088023657	
+Month is missing
+SUCCESS	FAIL	
+0.2685182573740051	0.731481742625995	
+
+
+Weight: 1.0
+
+Decision Stump
+
+Classifications
+
+Month = Jan : FAIL
+Month != Jan : SUCCESS
+Month is missing : SUCCESS
+
+Class distributions
+
+Month = Jan
+SUCCESS	FAIL	
+0.21372535177312216	0.7862746482268779	
+Month != Jan
+SUCCESS	FAIL	
+0.6872476003199052	0.31275239968009494	
+Month is missing
+SUCCESS	FAIL	
+0.500000000000516	0.49999999999948397	
+
+
+Weight: 0.98
+
+Decision Stump
+
+Classifications
+
+Month = Feb : FAIL
+Month != Feb : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Feb
+SUCCESS	FAIL	
+0.14340294683766214	0.8565970531623379	
+Month != Feb
+SUCCESS	FAIL	
+0.6412815591188022	0.35871844088119775	
+Month is missing
+SUCCESS	FAIL	
+0.4404397320967411	0.559560267903259	
+
+
+Weight: 0.99
+
+Decision Stump
+
+Classifications
+
+Month = Jan : FAIL
+Month != Jan : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Jan
+SUCCESS	FAIL	
+0.21226130103662325	0.7877386989633767	
+Month != Jan
+SUCCESS	FAIL	
+0.5257532813270509	0.4742467186729491	
+Month is missing
+SUCCESS	FAIL	
+0.3691115479292553	0.6308884520707446	
+
+
+Weight: 0.65
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 34.905 : FAIL
+DebtTOIncome > 34.905 : FAIL
+DebtTOIncome is missing : FAIL
+
+Class distributions
+
+DebtTOIncome <= 34.905
+SUCCESS	FAIL	
+0.40196197391030675	0.5980380260896934	
+DebtTOIncome > 34.905
+SUCCESS	FAIL	
+0.015937089477243687	0.9840629105227563	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.35474827856866664	0.6452517214313334	
+
+
+Weight: 0.6
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 34.905 : SUCCESS
+DebtTOIncome > 34.905 : FAIL
+DebtTOIncome is missing : FAIL
+
+Class distributions
+
+DebtTOIncome <= 34.905
+SUCCESS	FAIL	
+0.5500654625477641	0.449934537452236	
+DebtTOIncome > 34.905
+SUCCESS	FAIL	
+0.02861453055413202	0.9713854694458679	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.4999999999979446	0.5000000000020554	
+
+
+Weight: 0.37
+
+Decision Stump
+
+Classifications
+
+Month = Feb : FAIL
+Month != Feb : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Feb
+SUCCESS	FAIL	
+0.2393739624424685	0.7606260375575314	
+Month != Feb
+SUCCESS	FAIL	
+0.5497344245922754	0.4502655754077246	
+Month is missing
+SUCCESS	FAIL	
+0.42438614337783953	0.5756138566221605	
+
+
+Weight: 0.55
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 4.26 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.18 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      111526               92.9383 %
+Incorrectly Classified Instances      8474                7.0617 %
+Kappa statistic                          0.8549
+Mean absolute error                      0.0847
+Root mean squared error                  0.2045
+Relative absolute error                 17.1764 %
+Root relative squared error             41.1673 %
+Total Number of Instances           120000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.990    0.147    0.894      0.990    0.940      0.861    0.989     0.989     SUCCESS
+                 0.853    0.010    0.986      0.853    0.914      0.861    0.989     0.979     FAIL
+Weighted Avg.    0.929    0.086    0.935      0.929    0.929      0.861    0.989     0.985     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 66222   648 |     a = SUCCESS
+  7826 45304 |     b = FAIL
+

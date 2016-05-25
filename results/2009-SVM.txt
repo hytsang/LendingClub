@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -Z -model "C:\\Program Files\\Weka-3-8" -seed 1
+Relation:     2009part_a_fixed
+Instances:    16377
+Attributes:   7
+              AmountRequested
+              Month
+              Purpose
+              DebtTOIncome
+              State
+              YearsOfEmployment
+              ApplicationOutcome
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 24.89 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 3.35 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3519               71.6263 %
+Incorrectly Classified Instances      1394               28.3737 %
+Kappa statistic                          0     
+Mean absolute error                      0.2837
+Root mean squared error                  0.5327
+Relative absolute error                 70.8411 %
+Root relative squared error            118.1035 %
+Total Number of Instances             4913     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.284     SUCCESS
+                 1.000    1.000    0.716      1.000    0.835      0.000    0.500     0.716     FAIL
+Weighted Avg.    0.716    0.716    0.513      0.716    0.598      0.000    0.500     0.594     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0 1394 |    a = SUCCESS
+    0 3519 |    b = FAIL
+

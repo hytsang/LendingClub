@@ -1,0 +1,282 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     2007part_a_fixed
+Instances:    896
+Attributes:   7
+              AmountRequested
+              Month
+              Purpose
+              DebtTOIncome
+              State
+              YearsOfEmployment
+              ApplicationOutcome
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : FAIL
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : FAIL
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.4494163424124514	0.5505836575875487	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+0.0	1.0	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.2578125	0.7421875	
+
+
+Weight: 1.06
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : SUCCESS
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : SUCCESS
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.7014767932489444	0.2985232067510556	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+1.7256411541130496E-18	1.0	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.5000000000000036	0.4999999999999964	
+
+
+Weight: 1.31
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : FAIL
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : FAIL
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.3884345794392598	0.6115654205607401	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+-3.124448468586149E-16	1.0000000000000004	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.3175740210124205	0.6824259789875796	
+
+
+Weight: 0.76
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : SUCCESS
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : SUCCESS
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.577140549273027	0.42285945072697306	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+-5.562273404272703E-17	1.0	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.5000000000000031	0.4999999999999969	
+
+
+Weight: 0.55
+
+Decision Stump
+
+Classifications
+
+Purpose = credit_card : SUCCESS
+Purpose != credit_card : FAIL
+Purpose is missing : FAIL
+
+Class distributions
+
+Purpose = credit_card
+SUCCESS	FAIL	
+0.9729363743456345	0.02706362565436556	
+Purpose != credit_card
+SUCCESS	FAIL	
+0.3473084062138331	0.6526915937861668	
+Purpose is missing
+SUCCESS	FAIL	
+0.3945334069574863	0.6054665930425137	
+
+
+Weight: 0.74
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : SUCCESS
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : SUCCESS
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.5977967301250812	0.4022032698749188	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+2.0045812850880125E-15	0.999999999999998	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.551090032925804	0.448909967074196	
+
+
+Weight: 0.53
+
+Decision Stump
+
+Classifications
+
+Month = Dec : FAIL
+Month != Dec : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Dec
+SUCCESS	FAIL	
+0.28345808881001966	0.7165419111899805	
+Month != Dec
+SUCCESS	FAIL	
+0.626258391518589	0.3737416084814111	
+Month is missing
+SUCCESS	FAIL	
+0.4379142234443128	0.5620857765556871	
+
+
+Weight: 0.73
+
+Decision Stump
+
+Classifications
+
+Month = Nov : FAIL
+Month != Nov : SUCCESS
+Month is missing : FAIL
+
+Class distributions
+
+Month = Nov
+SUCCESS	FAIL	
+0.1576346902828174	0.8423653097171826	
+Month != Nov
+SUCCESS	FAIL	
+0.5650784753356212	0.43492152466437894	
+Month is missing
+SUCCESS	FAIL	
+0.4489887521489108	0.5510112478510892	
+
+
+Weight: 0.59
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : FAIL
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : FAIL
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.4042551938307066	0.5957448061692935	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+1.0354587091619332E-14	0.9999999999999896	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.3767779366299651	0.6232220633700348	
+
+
+Weight: 0.5
+
+Decision Stump
+
+Classifications
+
+DebtTOIncome <= 24.810000000000002 : SUCCESS
+DebtTOIncome > 24.810000000000002 : FAIL
+DebtTOIncome is missing : SUCCESS
+
+Class distributions
+
+DebtTOIncome <= 24.810000000000002
+SUCCESS	FAIL	
+0.5288381735897624	0.4711618264102376	
+DebtTOIncome > 24.810000000000002
+SUCCESS	FAIL	
+3.019828267325292E-14	0.9999999999999698	
+DebtTOIncome is missing
+SUCCESS	FAIL	
+0.5000000000000049	0.4999999999999951	
+
+
+Weight: 0.22
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         236               87.7323 %
+Incorrectly Classified Instances        33               12.2677 %
+Kappa statistic                          0.6111
+Mean absolute error                      0.2408
+Root mean squared error                  0.3324
+Relative absolute error                 63.3968 %
+Root relative squared error             77.1805 %
+Total Number of Instances              269     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.530    0.010    0.946      0.530    0.680      0.650    0.884     0.731     SUCCESS
+                 0.990    0.470    0.866      0.990    0.924      0.650    0.884     0.944     FAIL
+Weighted Avg.    0.877    0.357    0.886      0.877    0.864      0.650    0.884     0.892     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  35  31 |   a = SUCCESS
+   2 201 |   b = FAIL
+

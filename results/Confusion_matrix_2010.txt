@@ -1,0 +1,24 @@
+LibSVM
+a     b   <-- classified as
+0  3309 |     a = SUCCESS
+0 29702 |     b = FAIL
+
+Logistic Regression
+a     b   <-- classified as
+533  2776 |     a = SUCCESS
+410 29292 |     b = FAIL
+
+Ada-Boost
+a     b   <-- classified as
+0  3309 |     a = SUCCESS
+0 29702 |     b = FAIL
+
+Random Forest
+a     b   <-- classified as
+1865 1444 |     a = SUCCESS
+925  28777 |     b = FAIL
+
+Artificial Neural Network
+a     b   <-- classified as
+1571 1738 |     a = SUCCESS
+1474 28228 |     b = FAIL

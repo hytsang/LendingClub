@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     2014part_a_fixed_reduced
+Instances:    399999
+Attributes:   7
+              AmountRequested
+              Month
+              Purpose
+              DebtTOIncome
+              State
+              YearsOfEmployment
+              ApplicationOutcome
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 51.48 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 4.37 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      115249               96.0408 %
+Incorrectly Classified Instances      4751                3.9592 %
+Kappa statistic                          0.9198
+Mean absolute error                      0.051 
+Root mean squared error                  0.1712
+Relative absolute error                 10.3452 %
+Root relative squared error             34.4685 %
+Total Number of Instances           120000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.963    0.043    0.966      0.963    0.964      0.920    0.992     0.994     SUCCESS
+                 0.957    0.037    0.954      0.957    0.955      0.920    0.992     0.985     FAIL
+Weighted Avg.    0.960    0.040    0.960      0.960    0.960      0.920    0.992     0.990     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 64410  2460 |     a = SUCCESS
+  2291 50839 |     b = FAIL
+

@@ -1,0 +1,217 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     2012part_a_fixed
+Instances:    371126
+Attributes:   7
+              AmountRequested
+              Month
+              Purpose
+              DebtTOIncome
+              State
+              YearsOfEmployment
+              ApplicationOutcome
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                  Class
+Variable                        SUCCESS
+=======================================
+AmountRequested                 -0.0001
+Month=Dec                       -0.0616
+Month=Nov                        0.0821
+Month=Oct                       -0.0244
+Month=Sept                       0.2478
+Month=Aug                        0.1256
+Month=Jul                       -0.0186
+Month=Jun                       -0.1913
+Month=May                        -0.119
+Month=Apr                         -0.06
+Month=Mar                       -0.0211
+Month=Feb                        0.0434
+Month=Jan                       -0.0929
+Purpose=debt_consolidation       0.9611
+Purpose=moving                  -0.7415
+Purpose=credit_card              2.0149
+Purpose=wedding                  1.1828
+Purpose=small_business          -0.3986
+Purpose=home_improvement        -0.0239
+Purpose=vacation                 -0.087
+Purpose=major_purchase          -0.7857
+Purpose=other                   -1.6504
+Purpose=car                     -3.9508
+Purpose=house                    0.4771
+Purpose=renewable_energy        -1.8293
+Purpose=medical                 -0.2581
+Purpose=educational           -579.0002
+DebtTOIncome                         -0
+State=OR                         0.5621
+State=MO                        -0.0923
+State=NY                         0.3405
+State=VA                         0.2221
+State=FL                         0.1802
+State=CA                         0.4282
+State=NC                         0.0166
+State=TX                         0.1806
+State=MD                         0.2203
+State=WA                         0.5151
+State=NJ                         0.2405
+State=PA                        -0.4928
+State=HI                        -0.2646
+State=AL                        -0.3828
+State=LA                         0.1336
+State=NV                            0.4
+State=GA                         0.0341
+State=CO                         0.4199
+State=AZ                         0.3885
+State=IL                         0.0432
+State=WI                        -0.2855
+State=WY                        -0.0434
+State=OH                        -0.5332
+State=WV                        -0.3587
+State=KY                        -0.9076
+State=MN                         0.3756
+State=AR                        -0.5489
+State=MT                        -0.1038
+State=MA                         0.0817
+State=NM                        -0.0068
+State=KS                        -0.1607
+State=CT                         0.0534
+State=MI                        -0.3856
+State=AK                         0.2647
+State=SC                         0.0541
+State=UT                         0.2814
+State=DC                         0.9699
+State=IN                         -8.049
+State=DE                        -0.7435
+State=NH                         0.0126
+State=OK                         -0.136
+State=RI                        -0.3077
+State=SD                         0.0492
+State=VT                        -0.2311
+State=MS                        -2.2917
+State=TN                      -306.5592
+State=NE                      -270.1426
+State=ND                      -330.3634
+State=ME                      -404.6601
+YearsOfEmployment                0.8067
+Intercept                       -3.6652
+
+
+Odds Ratios...
+                                  Class
+Variable                        SUCCESS
+=======================================
+AmountRequested                  0.9999
+Month=Dec                        0.9403
+Month=Nov                        1.0856
+Month=Oct                        0.9759
+Month=Sept                       1.2812
+Month=Aug                        1.1338
+Month=Jul                        0.9816
+Month=Jun                        0.8259
+Month=May                        0.8878
+Month=Apr                        0.9418
+Month=Mar                        0.9791
+Month=Feb                        1.0444
+Month=Jan                        0.9112
+Purpose=debt_consolidation       2.6146
+Purpose=moving                   0.4764
+Purpose=credit_card              7.5001
+Purpose=wedding                  3.2634
+Purpose=small_business           0.6713
+Purpose=home_improvement         0.9763
+Purpose=vacation                 0.9167
+Purpose=major_purchase           0.4558
+Purpose=other                     0.192
+Purpose=car                      0.0192
+Purpose=house                    1.6114
+Purpose=renewable_energy         0.1605
+Purpose=medical                  0.7725
+Purpose=educational                   0
+DebtTOIncome                          1
+State=OR                         1.7543
+State=MO                         0.9118
+State=NY                         1.4057
+State=VA                         1.2487
+State=FL                         1.1975
+State=CA                         1.5346
+State=NC                         1.0167
+State=TX                          1.198
+State=MD                         1.2464
+State=WA                         1.6738
+State=NJ                         1.2719
+State=PA                         0.6109
+State=HI                         0.7675
+State=AL                         0.6819
+State=LA                         1.1429
+State=NV                         1.4918
+State=GA                         1.0347
+State=CO                         1.5218
+State=AZ                         1.4748
+State=IL                         1.0442
+State=WI                         0.7516
+State=WY                         0.9575
+State=OH                         0.5867
+State=WV                         0.6986
+State=KY                         0.4035
+State=MN                         1.4559
+State=AR                         0.5776
+State=MT                         0.9014
+State=MA                         1.0851
+State=NM                         0.9933
+State=KS                         0.8516
+State=CT                         1.0549
+State=MI                           0.68
+State=AK                          1.303
+State=SC                         1.0556
+State=UT                         1.3249
+State=DC                         2.6378
+State=IN                         0.0003
+State=DE                         0.4755
+State=NH                         1.0127
+State=OK                         0.8729
+State=RI                         0.7351
+State=SD                         1.0504
+State=VT                         0.7937
+State=MS                         0.1011
+State=TN                              0
+State=NE                              0
+State=ND                              0
+State=ME                              0
+YearsOfEmployment                2.2405
+
+
+Time taken to build model: 26.35 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.42 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      101603               91.2564 %
+Incorrectly Classified Instances      9735                8.7436 %
+Kappa statistic                          0.5922
+Mean absolute error                      0.1162
+Root mean squared error                  0.2593
+Relative absolute error                 48.8493 %
+Root relative squared error             75.317  %
+Total Number of Instances           111338     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.568    0.033    0.735      0.568    0.641      0.599    0.917     0.698     SUCCESS
+                 0.967    0.432    0.934      0.967    0.950      0.599    0.917     0.981     FAIL
+Weighted Avg.    0.913    0.377    0.906      0.913    0.908      0.599    0.917     0.942     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  8694  6607 |     a = SUCCESS
+  3128 92909 |     b = FAIL
+
