@@ -1,0 +1,40 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     LoanStats2013_part2_normalized-weka.filters.unsupervised.attribute.Remove-R5,10,12_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1-weka.filters.unsupervised.attribute.Remove-R4-25
+Instances:    421095
+Attributes:   4
+              0.337home_ownership=MORTGAGE+0.32 verification_status=Verified+0.315loan_amnt-0.31home_ownership=RENT-0.309verification_status=Not Verified...
+              0.304loan_amnt+0.3  purpose=credit_card-0.297purpose=debt_consolidation+0.294term= 60 months+0.293installment...
+              -0.564pub_rec-0.56record+0.227revol_util-0.206total_acc-0.177annual_inc...
+              int_rate
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+int_rate =
+
+     -0.0006 * 0.337home_ownership=MORTGAGE+0.32 verification_status=Verified+0.315loan_amnt-0.31home_ownership=RENT-0.309verification_status=Not Verified... +
+      0.0017 * 0.304loan_amnt+0.3  purpose=credit_card-0.297purpose=debt_consolidation+0.294term= 60 months+0.293installment... +
+     -0.0005 * -0.564pub_rec-0.56record+0.227revol_util-0.206total_acc-0.177annual_inc... +
+      0.1419
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.05 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.0819
+Mean absolute error                      0.0359
+Root mean squared error                  0.044 
+Relative absolute error                 99.4585 %
+Root relative squared error             99.6651 %
+Total Number of Instances            40272     
+Ignored Class Unknown Instances              86056     
+
